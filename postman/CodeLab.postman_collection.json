@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "a8934d5a-c3b5-4c6f-b1e1-a8f5e38d9b33",
+		"name": "CodeLab",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "todo",
+			"item": [
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "fadeev",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "psw",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/auth/register",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "fadeev",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "psw",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/auth/login",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/auth/logout",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "todolist",
+					"item": [
+						{
+							"name": "index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "title of todo321",
+											"type": "text"
+										},
+										{
+											"key": "body",
+											"value": "body of todo",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/create",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "updated title",
+											"type": "text"
+										},
+										{
+											"key": "body",
+											"value": "updated body",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/1/update",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"1",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{{scheme}}://{{host}}:{{port}}/1/delete",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{scheme}}://{{host}}:{{port}}/1/delete",
+									"protocol": "{{scheme}}",
+									"host": [
+										"{{host}}"
+									],
+									"port": "{{port}}",
+									"path": [
+										"1",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "hello",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{scheme}}://{{host}}:{{port}}/hello",
+							"protocol": "{{scheme}}",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"hello"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
