@@ -1,0 +1,2 @@
+include todo/schema.sql
+global-exclude *.pyc
